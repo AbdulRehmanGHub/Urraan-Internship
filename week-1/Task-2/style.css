@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .front-1{
+    background-color: #d4d4d4;
+} */
+
+main .front-1 #logo-img{
+    /* display: inline-block; */
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 2%;
+    width: 420px;
+}
+
+#top_screens{
+    /* display: inline-block; */
+    width: 600px;
+    margin-top: -20%;
+    margin-left: 50%;
+
+}
+
+.front-1 h1{
+    margin-left: 12%;
+    margin-top: -19%;
+}
+
+.front-1 p{
+    margin-left: 14%;
+    margin-top: 1%;
+    color: #5e5e5e;
+
+}
+
+article{
+    margin-left: 12%;
+}
+
+.btn-1 #play_store-img, #app_store-img{
+    width: 240px;
+    margin-top: 5%;
+    margin-left: -5%;
+}
+
+#app_store-img{
+    margin-left: 2%;
+}
+
+
+/* Starting Section 2 */
+
+/* .front-2{
+    background-color: #d4d4d4;
+} */
+
+main .front-2 .screen1 #sec-img1{
+    /* display: inline-block; */
+    margin-top: 10%;
+    margin-left: -8%;
+    margin-right: 2%;
+    width: 420px;
+}
+
+.front-2 .screen1 h1{
+    margin-left: 60%;
+    margin-top: -30%;
+}
+
+.front-2 .screen1 p{
+    margin-left: 60%;
+    margin-top: 1%;
+}
+
+.front-2 .screen2 #sec-img2{
+    /* display: inline-block; */
+    margin-top: 25%;
+    margin-left: 55%;
+    margin-right: 2%;
+    width: 420px;
+}
+
+.front-2 .screen2 h1{
+    margin-left: 5%;
+    margin-top: -30%;
+
+}
+
+.front-2 .screen2 p{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+/* Starting Section 3 */
+
+.front-3 .screen3 #for-img2{
+    margin-left: -8%;
+    margin-top: 20%;
+    width: 420px;    
+} 
+
+.front-3 .screen3 h1, p{
+    margin-left: 60%;
+    margin-top: -20%;
+}
+
+.front-3 .screen3 p{
+    margin-left: 60%;
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+
+
+.front-4 h1{
+    margin-left: 40%;
+    margin-bottom: -3%;
+
+}
+
+.front-4 p{
+    margin-left: 40%;
+    margin-top: 1%;
+}
+
+.front-4 .btn-2 #play_store-img1, #app_store-img1{
+    /* display: inline-block; */
+    margin-top: 5%;
+    margin-left: 23%;
+    margin-right: 2%;
+    width: 240px;
+}
+
+#app_store-img1{
+    margin-left: -1%;;
+}
+
+#pre-logo{
+    margin-top: 10px;
+    margin-left: 46%;
+    width: 100px;
+}
