@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Manche_font.ttf);
+}
+
+/* Starting Top-Area Part */
+
+.top-container{
+    display: flex;
+    margin: 3px 1px 16px 2px;
+    padding: 0 94px 0 94px;
+    background-color: #8c3232;
+    height: 1050px;
+
+    background:
+    linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
+}
+
+.top-container .logo img{
+    margin: 45px 0 40px 0;
+    height: 240px;
+    width: 240px;
+}
+
+.top-container .texts h1, h3, p{
+    font-family: myFont;
+}
+
+.top-container .texts h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 140px;
+    font-weight:900;
+}
+
+.top-container .texts h3{
+    margin-top: -2%;
+    margin-bottom: 20px;
+    font-size: 66px;
+    /* background-color: aqua; */
+}
+
+.top-container .texts p{
+    color: #fff;
+    font-size: 28px;
+    /* background-color: aqua; */
+    margin-right: 3%;
+}
+
+/* Starting Mid-Area Part */
+.mid-container{
+    margin: 5% 10% 10% 10%;
+    /* margin-top: 20px; */
+
+    /* background-color: #0e9b1a; */
+}
+
+.mid-first{
+    display: flex;
+    /* margin: 10% 10% 10% 10%; */
+}
+
+.mid-first img{
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+    /* background-color: yellow; */
+    height: 58px;
+    /* width: 50px; */
+    margin-top: 94px;
+}
+
+.mid-first h1{
+    display: flex;
+    /* background-color: aqua; */
+    color: #000;
+    font-family: myFont;
+    font-size: 86px;
+    margin-left: 18px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 8%;
+}
+
+.clubs{
+    font-family: myFont;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.clubs .logo1 img{
+    margin: 10px 0 10px 0;
+    width: 120px;
+    height: 120px;
+}
+
+.clubs .logo1 h2{
+    color: #8c3232;
+}
+
+.clubs .logo1 h3{
+    font-size: 20px;
+}
+
+.logo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-container{
+    background-color: #8c3232;
+    height: 460px;
+    margin-left: 2px;
+    background: 
+    linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.last-container .heading-last{
+    height: 100px;
+    margin-left: 10%;
+    margin-top: -5%;
+    font-family: myFont;
+    font-size: 34px;
+    color: #fff;
+}
+
+
