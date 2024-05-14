@@ -1,0 +1,54 @@
+<style>
+    /* Hide the default checkbox */
+    .custom-cb input[type="checkbox"] {
+        display: none;
+    }
+
+    /* Style the custom checkbox container */
+    .custom-cb label {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 25px; /* Adjust the padding as needed */
+    }
+
+    /* Create the checkbox icon */
+    .custom-cb label::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px; /* Adjust the size of the checkbox icon */
+        height: 18px; /* Adjust the size of the checkbox icon */
+        border: 2px solid #000; /* Adjust the border color */
+        background-color: transparent; /* Set the background color to transparent */
+    }
+
+    /* Create the checkmark using a custom font icon */
+    .custom-cb label::after {
+        content: '\2713'; /* Unicode character for checkmark */
+        font-family: Arial, sans-serif; /* Use any font family */
+        font-size: 14px; /* Adjust the size of the checkmark */
+        position: absolute;
+        top: 1px; /* Adjust vertical position to center the checkmark */
+        left: 2px; /* Adjust horizontal position to center the checkmark */
+        color: #000; /* Adjust the color of the checkmark */
+        visibility: hidden; /* Hide the checkmark by default */
+    }
+
+    /* Show the checkmark when checked */
+    .custom-cb input[type="checkbox"]:checked + label::before {
+        background-color: #000; /* Change the background color when checked */
+    }
+
+    /* Show the checkmark when checked */
+    .custom-cb input[type="checkbox"]:checked + label::after {
+        visibility: visible; /* Show the checkmark when the checkbox is checked */
+    }
+</style>
+
+<div class="custom-cb">
+    <input type="checkbox" id="customCheckbox">
+    <label for="customCheckbox">Best Livestream</label>
+</div>
+<textarea placeholder="Description & Results (max.150 words)"></textarea>

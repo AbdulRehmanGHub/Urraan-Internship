@@ -1,0 +1,14 @@
+.container{
+    background-color: black;
+     color: magenta; /* Magenta color */
+    }
+  
+  input[type="checkbox"] {
+    accent-color:  yellow;
+   
+    outline: 3px solid currentcolor; /* Magenta border color */
+  }
+  
+  input[type="submit"]{
+    background: lightgray;
+  }

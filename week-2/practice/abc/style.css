@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid rgb(98, 0, 0);
+}
+
+.row{
+    border: 1px solid rgb(0, 5, 98);
+    /* background-color: #98242a; */
+
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    border: 1px solid rgb(0, 98, 18);
+}
