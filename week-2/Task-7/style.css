@@ -1,0 +1,136 @@
+@font-face {
+    font-family: myFont;
+    src: url(Manche_font.ttf);
+}
+
+.top-section{
+    background:
+    linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
+
+    padding-bottom: 20%;
+}
+
+.top img{
+    /* background-color: aquamarine; */
+    padding: 20px 75px 10px 75px;
+    width: 400px;
+    height: 280px;
+}
+
+.top-text{
+    padding: 20px 75px 0px 75px;
+    font-family: myFont;
+    font-weight: bold;
+}
+
+.top-text h1{
+    padding-bottom: 0%;
+    color: #fff;
+    font-family: myFont;
+    /* background-color: aqua; */
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.top-text h3{
+    margin-top: -3%;
+    font-size: 58px;
+}
+
+.top-text p{
+    margin-top: 2%;
+    font-size: 28px;
+    /* font-weight: bold; */
+    margin-right: 4%;
+    text-align: justify;
+    color: #fff;
+}
+
+/* Starting mid part */
+
+.all-mid{
+    background-color: blue;
+    margin: 40px 20px 40px 20px;
+    /* background-color: blue; */
+}
+
+.mid{
+    margin-top: 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(0, 124, 48); */
+}
+
+.mid-first{
+    margin-left: 5%;
+    margin-top: 5%;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: chartreuse; */
+}
+
+.mid-first img{
+    width: 70px;
+    height: 64px;
+}
+
+.mid-first h1{
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    /* margin-top: 16px; */
+    /* text-align: center; */
+    font-family: myFont;
+    justify-content: start;
+}
+
+.mid-second{
+    margin: 10px 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.mid-second img{
+    width: 180px;
+    height: 180px;
+}   
+
+.mid-second h1{
+    font-size: 26px;
+    font-family: myFont;
+    color: #8c3232;
+    font-weight: bold;
+}
+
+.mid-second h2{
+    font-size: 26px;
+    margin-top: -3%;
+    font-family: myFont;
+    font-weight: bold;
+}
+
+/* Startingn Last Section */
+
+.last-section{
+    height: 400px;
+    padding: 5% 10%;
+    background:
+    linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
+}
+
+.last-text h1{
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+    .all-mid{
+        background-color: aqua;
+    }
+    
+}
