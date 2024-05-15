@@ -3,6 +3,13 @@
     src: url(Manche_font.ttf);
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    overflow-x: hidden;
+}
+
 .top-section{
     background:
     linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
@@ -50,14 +57,13 @@
 
 /* Starting mid part */
 
-.all-mid{
-    background-color: blue;
-    margin: 40px 20px 40px 20px;
+/* .all-mid{ */
+    /* margin: 40px 20px 40px 20px; */
     /* background-color: blue; */
-}
+/* } */
 
 .mid{
-    margin-top: 20px;
+    margin-top: 60px;
     /* background-color: blue; */
     display: flex;
     justify-content: space-between;
@@ -75,12 +81,14 @@
 
 .mid-first img{
     width: 70px;
-    height: 64px;
+    height: 65px;
+    margin-right: 3%;
+    padding-top: 10px;
 }
 
 .mid-first h1{
     text-transform: uppercase;
-    font-size: 72px;
+    font-size: 80px;
     font-weight: bold;
     /* margin-top: 16px; */
     /* text-align: center; */
@@ -89,15 +97,15 @@
 }
 
 .mid-second{
-    margin: 10px 20px;
+    margin: 10px 10px;
     text-align: center;
-    padding: 5px;
+    padding: 5px 80px;
 }
 
-.mid-second img{
+/* .mid-second img{
     width: 180px;
     height: 180px;
-}   
+}    */
 
 .mid-second h1{
     font-size: 26px;
@@ -116,7 +124,7 @@
 /* Startingn Last Section */
 
 .last-section{
-    height: 400px;
+    height: 300px;
     padding: 5% 10%;
     background:
     linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
@@ -125,12 +133,39 @@
 .last-text h1{
     font-family: myFont;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
 }
 
-@media screen and (max-width: 1280px) {
-    .all-mid{
-        background-color: aqua;
+@media screen and (max-width: 768px) {
+
+    .top img{
+        width: 300px;
+        height: 200px;
     }
-    
+
+    .top-text h1{
+        font-size:40px;
+    }
+
+    .top-text h3{
+        font-size: 20px;
+    }
+
+    .top-text p{
+        font-size: 14px;
+    }
+
+    .mid-first h1{
+        font-size: 60px;
+    }
+
+    .mid-first img{
+        width: 50px;
+        height: 45px;
+    }
+
+    .last-text h1{
+        padding-top: 20%;
+        font-size: 24px;
+    }
 }
