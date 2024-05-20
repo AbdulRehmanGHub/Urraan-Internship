@@ -18,7 +18,9 @@
 
             <div class="header-right">
                 <h2>CALL OUR OFFICES NOW!</h2>
-                <hr>
+                <div class="line">
+
+                </div>
                 <h1>540.433.6906</h1>
                 <p>Get Your Questions Answered Fast</p>
             </div>
@@ -26,18 +28,19 @@
     </header>
 
 <!-- Navigation Section -->
-    <nav>
-        <div class="container-navbar">
-            <ul>
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">BIOGRAPHY</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">AREAS WE SERVE</a></li>
-                <li><a href="#">LIBRARY</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+    <div class="container-navbar">
+        <div class="menu-icon" data-toggle="false">&#9778;</div>
+        <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">BIOGRAPHY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">AREAS WE SERVE</a></li>
+            <li><a href="#">LIBRARY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Main Section -->
     <main>
@@ -70,26 +73,19 @@
                             <form>
                                 <label for="name">NAME:</label>
                                 <input type="text" name="name">
-
                                 <br>
-
                                 <label for="email">EMAIL:</label>
                                 <input type="email" name="email">
-
                                 <br>
-
                                 <label for="phone">PHONE:</label>
                                 <input type="tel" name="phone">
-
                                 <br>
-
                                 <textarea rows="3" name="message" placeholder="Tell us about your case here..."></textarea>
-
                                 <br>
-                                
-                                <p class="guarantee-text">100% Privacy Guranteed</p>
-
-                                <button>Ask Us About Your Case <i></i></button>
+                                <div class="guarantee-text">
+                                <p>100% Privacy Guranteed</p>
+                            </div>
+                            <button id="form-btn">Ask Us About Your Case <i></i></button>
                                 
                                 <div class="conf-img">
                                     <img src="images/confidential.png" alt="confidential-img">
@@ -98,46 +94,44 @@
 
                         </div>
                 </div>
-
             </section>
 
 <!-- Main Section 2 -->
-
             <section class="top-section2">
                 <div class="headings-left-section2">
                     <h2>CHARGED WITH <span>DUI?</span></h2>
                     <h3>FREE CASE EVALUATION</h3>
-                    <!-- <div class="para-img-left-section2"> -->
+
                         <div class="left-section2-img">
                             <img src="images/paste_board.gif" alt="paste-bd-img">
-                        </div>    
-                        <!-- </div> -->
-                    <p id="para1">Being charged with a DUI <br>can be scary. Get the help <br> you deserve.</p> <br>
-                    <p>Click here to let us know <br>how we can help you with <br> your case.</p>
+                        </div>
 
-                    
+                    <div class="right-paras">
+                    <p id="para1">Being charged with a DUI <br>can be scary. Get the help <br> you deserve. <br><br>
+                        Click here to let us know <br>how we can help you with <br> your case.</p>
+                    </div>
+
                         <div class="left-section2-btn">
                             <button>Click Here</button>
                         </div>
                 </div>
                 
-                
-
 <!-- Main Mid Section -->
                 <div class="mid-section2">
                 <div class="headings-mid-section2-up" >
                     <h2>LAW <span>BLOG</span</h2>
-                
 
                 <div class="para-img-mid-section2-up">
                     <div class="mid-section2-paras-up">
                         <p>Learn more about <br> Virginia Traffic Laws.</p>
-                        <!-- <p>Click here to let us know how we can help you with your case.</p> -->
-                        <button>Click Here</button>
-                    </div>
 
+                    </div>
+                    
                     <div class="mid-section2-img1-up">
                         <img src="images/pic1.gif" alt="laptop-img">
+                    </div>
+                    <div class="btn-design">
+                    <button>Click Here</button>
                     </div>
 
                 </div>
@@ -147,12 +141,11 @@
                 <div class="mid-section2-paras-down">
                         <h2>CASE <span>RESULTS</span></h2>
                         <p>See how we help our clents. <br> Read our latest case results.</p>
-                        <!-- <p>Click here to let us know how we can help you with your case.</p> -->
                     </div>
 
                     <div class="mid-section2-img2-down">
                         <img src="images/order_icon.gif" alt="law-img">
-                        <button>Click Here</button>
+                            <button>Click Here</button>
                     </div>
                 </div>
             </div>
@@ -166,15 +159,11 @@
                     <p>Keefer Law Firm has protected the <br> rights of Virginians for over 30 years.</p>
                     <button>Learn More</button>
                 </div>
-                
-                
+
             </section>
 
-
-
 <!-- Main Section 3 -->
-
-            <section class="top-section3" style="background-color: greenyellow;">
+            <section class="top-section3">
                 <div class="headings-left-section3">
                     <h2>PRACTICE <span>AREAS</span></h2>
 
@@ -219,10 +208,9 @@
                 </div>
                 </div>
 
-
                 <div class="mid-section3">
-                    <h1>&lt;H1&gt;PAGE TITLE HERE</h1>
-                    <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    <h1 id="sec3-title">&lt;H1&gt;PAGE TITLE HERE</h1>
+                    <p id="sec3-para">Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris
                         nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. <br>
                         Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Asunt in anim uis aute
@@ -280,49 +268,28 @@
                         </div>
                     </div>
 
-
-
                 </div>
-
                 </section>
 
-                <footer>
-                    <div class="footer1">
-
-                    </div>
-
-                    <div class="footer2">
-                        
-                    </div>
-
-                </footer>
-
-                
-
-                
-
-
-            <!-- <section class="top-section2">
-                <div class="headings-left-section-2">
-                    <h2>CHARGED WITH DUI?</h2>
-                    <h3>FREE CASE EVALUATION</h3>
-                </div>
-
-                <div class="para-img-left-section2">
-                    <div class="left-section2-paras">
-                        <p>Being charged with a DUI can be scary. Get the help you deserve.</p>
-                        <p>Click here to let us know how we can help you with your case.</p>
-                    </div>
-
-                    <div class="left-section2-img">
-                        <img src="images/paste_board.gif" alt="paste-bd-img">
-                    </div>
-                </div>
-
-                
-            </section> -->
-    </main>
+            </main>
+            <footer>
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+            </footer>
 
 </div>
+
+<!-- script for menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navMenu = document.querySelector(".container-navbar");
+
+        menuIcon.addEventListener("click", function () {
+            const isToggled = navMenu.getAttribute("data-toggle") === "true";
+            navMenu.setAttribute("data-toggle", !isToggled);
+        });
+    });
+</script>
 </body>
 </html>
