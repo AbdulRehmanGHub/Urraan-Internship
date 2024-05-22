@@ -15,27 +15,25 @@
   }
 
   form input{
-    width: 160px;
+    width: 150px;
     margin: 10px 0;
     border: 1px solid #000000;
   }
 
   .content3-on-img{
-    justify-content: space-evenly;
+    
   }
+
   .conf-img img{
-    width: 200px;
-    height: 50px;
-    rotate: 10deg;
+    width: 172px;
+    height: 60px;
+    rotate: 15deg;
   }
 
-  .textarea-in-img{
-    width: 380px;
-    border: 1px solid #000000;
-  }
-
-  textarea{
-    width: 380x;
+  .textarea-in-img textarea{
+    resize: none;
+    /* background-color: blue; */
+    width: 86%;
     height: 70px;
     margin: 10px 0;
     border: 1px solid #000000;
@@ -44,17 +42,71 @@
   .content4-on-img{
     justify-content: space-evenly;
   }
-
-  .btn-on-img{
+  
+  .left-side-btns #left-btn{
+    background-color: #838383;
     width: 280px;
-    height: 40px;
-    background-color: red;
-    color: white;
-  }
+    height: 60px;
+    margin: 14px 0px;
+}
 
-  .btn-on-img p{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
+.left-side-btns #left-btn img{
+    padding-right: 3%;
+    float: left;
+    width: 20px;
+    height: 60px;
+}
+
+.left-side-btns #left-btn h1{
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 6px;
+}
+
+.left-side-btns #left-btn p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-right: 18px;
+    float: right;
+}
+
+
+.par-justify{
+    text-align: justify;
+}
+
+
+
+/* CSS */
+.click-btns{
+  background-color: #a70201;
+  border: none;
+}
+
+.right-btns{
+  width: 260px;
+  border-top: 1px solid #000000;
+}
+
+.btns{
+  width: 220px;
+  border-top: 1px solid #000000;
+}
+
+.navbar{
+  background-color: #770b09;
+}
+
+.heading1-in-img{
+  background-color: #a70201;
+}
+
+::placeholder{
+  color: #525050;
+  font-size: 20px;
+  font-weight: bold;
+}
 
