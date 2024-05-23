@@ -20,10 +20,6 @@
     border: 1px solid #000000;
   }
 
-  .content3-on-img{
-    
-  }
-
   .conf-img img{
     width: 172px;
     height: 60px;
@@ -45,7 +41,7 @@
   
   .left-side-btns #left-btn{
     background-color: #838383;
-    width: 280px;
+    width: 240px;
     height: 60px;
     margin: 14px 0px;
 }
@@ -69,8 +65,7 @@
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    padding-right: 18px;
-    float: right;
+    text-align: end;
 }
 
 
@@ -100,6 +95,31 @@
   background-color: #770b09;
 }
 
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%28255, 255, 255, 1%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"%2F%3E%3C%2Fsvg%3E') !important;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+/* Remove the outline and box-shadow on focus and active states */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Adjust the icon color on focus and active states */
+.navbar-toggler:focus .navbar-toggler-icon,
+.navbar-toggler:active .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%28255, 255, 255, 1%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"%2F%3E%3C%2Fsvg%3E') !important;
+}
+
+ul li:hover {
+  background-color: #838383;
+}
+
 .heading1-in-img{
   background-color: #a70201;
 }
@@ -110,3 +130,8 @@
   font-weight: bold;
 }
 
+@media (max-width: 990px) {
+  .abcd{
+    margin: auto;
+  }
+}
