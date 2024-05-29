@@ -1,0 +1,216 @@
+@font-face {
+    font-family: myFont;
+    src: url(Manche_font.ttf);
+}
+
+*{
+    box-sizing: border-box !important;
+}
+
+#message-name,
+#message-email,
+#message-org {
+    color:#fff;
+    /* font-weight: bold; */
+    /* background-color: blue; */
+    text-align: left;
+    margin-left: 28px;
+}
+
+.messages{
+    color: #fff;
+    margin-left: 28px;
+    text-align: left;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+}
+
+section{
+    width: 100%;
+    margin-left: 20px;
+}
+.main{
+overflow-x: hidden;
+   background-color: #8c3232;
+    /* width: 100%; */
+    /* box-sizing: border-box !important; */
+
+   background:
+    linear-gradient(-45deg, transparent 90px, #8c3232 0) bottom right;
+    /* margin-left: 10px !important; */
+}
+
+.main .left-text{
+    margin: 50% 16% 0 16%;
+    /* background-color: aqua; */
+}
+
+.main .left-text h1{
+    font-family: myFont;
+    /* text-align: center; */
+    color: white;
+    font-size: 94px;
+    font-weight: bold;
+}
+
+.main .left-text p{
+    font-family: myFont;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main .left-text h3{
+    font-family: myFont;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-1{
+    margin-left: 80%;
+}
+
+.btn-2{
+    /* background-color: brown; */
+    /* color: white; */
+    margin-left: 76%;
+}
+
+.formss{
+    /* background-color: aqua; */
+    /* margin-bottom: 100%; */
+    margin-right: 14%;
+}
+
+.up-input{
+    margin-top: 60px;
+    /* background-color: aqua; */
+}
+
+form input[type="text"]{
+    width: 92%;
+    height: 50px;
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+    margin: 10px 26px;
+}
+
+.right{
+    margin-right: 50px;
+}
+
+.right-text{
+    font-family: myFont;
+    margin: 10px 20px;
+
+    /* background-color: aqua; */
+}
+
+.right-text h2{
+    font-family: myFont;
+    /* text-align: center; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.right-text p{
+    font-family: myFont;
+    font-size: 11px;
+    margin-top: -12px;
+    color: #fff;
+}
+
+.left-text h3{
+    font-family: myFont;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form textarea{
+    line-height: 2em;
+    /* padding: 20px; */
+    margin: 20px 0 10px 20px;
+    width: 80%;
+    /* height: 50px; */
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+    resize: none;
+    margin-right: 20%;
+}
+
+::placeholder{
+    color: white;
+}
+
+.plus-btn1{
+    /* background-color: blue; */
+    margin-left: 22px;
+}
+
+.plus-btn3{
+    /* background-color: blue; */
+    margin-left: -30px;
+}
+
+.plus-btn4{
+    /* background-color: blue; */
+    margin-left: -22px;
+}
+
+.plus-btn5{
+    /* background-color: blue; */
+    margin-left: -14px;
+}
+
+form input[type="checkbox"]{
+    margin-left: 4%;
+    accent-color:  #8c3232;
+    border: 1px solid white;
+}
+
+/* Note: Change the Checkboxes Styles later */
+
+form label{
+    font-family: myFont;
+    margin-right: 22%;
+    color: #fff;
+}
+
+#sub-btn{
+    margin: 20px 20px 160px 20px;
+    width: 78%;
+    height: 50px;
+    font-size: 26px;
+    /* background-color:blue; */
+}
+
+
+.fa-solid,
+.fa-check{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 25px;
+    margin-top: 2px;
+}
+
+
+/* @media screen and (max-width: 868px){
+    .main{
+        background-color: blue;
+    }
+
+    
+} */
+
+/* must learn media-breakpoint */
+/* @include media-breakpoint-up(md) {
+    .main{
+        background-color: blue;
+    }
+} */
