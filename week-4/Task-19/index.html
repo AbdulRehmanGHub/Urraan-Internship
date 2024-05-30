@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List App - JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="top-blue-area">
+            <h1>To-do-List</h1>
+            <div class="input-field">
+                <input type="text" id="addnewtask" placeholder="Add your activity here...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <span id="error"></span>
+        </div>
+
+        <div class="top-purple-area">
+            <ul id="taskLists" class="task-fields"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
