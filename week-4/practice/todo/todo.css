@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: roboto, sans-serif;
+}
+
+.container{
+    /* background-color: mediumspringgreen; */
+}
+
+.top-blue-area{
+    background-color: #32b4d5;
+    height: 10rem;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-blue-area h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#error{
+    color: #fff;
+    width: 88%;
+    font-size: 12px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    height: 44px;
+    margin: 10px 0;
+}
+
+.input-field input{
+    width: 80%;
+    border: none;
+    padding-left: 30px;
+}
+
+.input-field button{
+    width: 20%;
+    background-color: #d9d9d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #989eae;
+}
+
+.input-field button:hover{
+    background-color: #f65848;
+}
+
+.top-purple-area{
+    /* background-color: #5a00eb; */
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-fields{
+    background-color: #989eae;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    border: 2px solid #888888;
+
+}
+
+.task-item li{
+    padding-top: 5px;
+    list-style-type: none;
+    width: 88%;
+    border: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.task-item button{
+    width: 16%;
+    background-color: #d9d9d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #989eae;
+    border: 1px solid #525252;
+    border-left: none;
+    height: 44px;
+
+}
+
+.task-item button:hover{
+    background-color: #f65848;
+}
