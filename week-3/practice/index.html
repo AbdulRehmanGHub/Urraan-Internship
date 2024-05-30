@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS</title>
+</head>
+<body>
+
+    <h1>Convert Hours to Seconds</h1>
+    <p>Enter Hours: <input type="text" id="hourss"></p>
+    <button>Check Result</button>
+    <p id="result"></p>
+
+
+    <script>
+
+        document.querySelector('button').addEventListener('click', function() {
+            const selectedHours = document.getElementById('hourss').value;
+            
+            const seconds = selectedHours * 3600;
+            document.getElementById('result').innerHTML = `${seconds} seconds`;
+        });
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find Next Num</h1>
+
+    <input type="number" name="fnum" id="fnum" />
+    <input type="number" name="snum" disabled id="snum" />
+    
+    <button onclick="findNum()" id="findbtn">Find</button>
+
+    <h1 id="res">
+        
+    </h1>
+
+    <script>
+        function findNum(){
+            const firstNum = parseFloat(document.getElementById('fnum').value);
+            const secondNum = firstNum + 1;
+
+            // alert(secondNum);
+            // console.log(secondNum);
+            document.getElementById("snum").value = `${secondNum}`;
+            // document.getElementById("res").innerHTML = `${secondNum}`;
+
+        }
+
+    </script>
+</body>
+</html>

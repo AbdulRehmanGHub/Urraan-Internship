@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" name="text" id="day-field">
+
+    <select name="month" id="month-field">
+        <option value="jan">jan</option>
+        <option value="feb">feb</option>
+        <option value="march">march</option>
+        <option value="april">april</option>
+        <option value="may">may</option>
+        <option value="june">june</option>
+        <option value="july">july</option>
+        <option value="aug">aug</option>
+        <option value="sep">sep</option>
+        <option value="oct">oct</option>
+        <option value="nov">nov</option>
+        <option value="dec">dec</option>
+    </select>
+
+    <input type="number" name="year" id="year-field">
+
+    <button onclick="calcAge()" id="calculate">Caluclate</button>
+
+    <input type="number" name="res" id="res" />
+
+    <!-- <p id="res"></p> -->
+
+    <script>
+        function calcAge(){
+            const day = document.getElementById('day-field').value;
+            const month = document.getElementById('month-field').value;
+            const year = document.getElementById('year-field').value;
+
+            if(day <= 0 || year > 2025 || year < 1800){
+                alert("Enter correct date of birth");
+            }
+
+            const dOb = new Date(`${day} ${month} ${year}`);
+            const today = new Date();
+
+            const difference = today - dOb.getTime();
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+            // alert(days)
+
+            document.getElementById('res').value = `${days}`;
+        }
+
+    </script>
+
+
+</body>
+</html>

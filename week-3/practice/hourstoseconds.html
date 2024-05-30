@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        hours to seconds
+    </h1>
+
+    <input type="number" name="hours" id="h-field">
+    <input type="number" name="seconds" disabled id="s-field">
+    <br>
+
+    <button onclick="convert()">Convert</button>
+    <button onclick="reset()">Reset</button>
+    <br>
+    <h1 id="res">
+
+    </h1>
+
+
+    <script>
+        function convert(){
+            const hours = parseInt(document.getElementById('h-field').value);
+            const seconds = hours * 60 * 60;
+
+            if(hours <= 0){
+                alert("Enter correct hours");
+                return 0;
+            }
+
+            // alert(seconds);
+            // document.getElementById('res').innerHTML = `${seconds}`;
+
+            document.getElementById('s-field').value = `${seconds}`;
+        }
+
+        function reset(){
+            document.getElementById('h-field').value = "";
+            document.getElementById('s-field').value = "";
+        }
+    </script>
+
+</body>
+</html>
