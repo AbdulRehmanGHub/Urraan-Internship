@@ -40,9 +40,9 @@ function updateDots() {
     }
 }
 
-var dot1 = document.getElementById('dot1');
-var dot2 = document.getElementById('dot2');
-var dot3 = document.getElementById('dot3');
+const dot1 = document.getElementById('dot1');
+const dot2 = document.getElementById('dot2');
+const dot3 = document.getElementById('dot3');
 
 dot1.onclick = function() {
     img = 0;

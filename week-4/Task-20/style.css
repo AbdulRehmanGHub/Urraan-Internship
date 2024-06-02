@@ -49,30 +49,35 @@ hr{
 }
 
 #prev, #next {
+    font-size: 60px;
+    font-weight:900;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+    background-color: transparent;
+    color: rgb(107, 107, 107);
     border: none;
-    padding: 20px 10px;
+    /* padding: 2px px; */
     cursor: pointer;
 }
 
 #prev:hover{
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(99, 99, 99, 0.2);
+    color: rgb(66, 66, 66);
 }
 
 #next:hover{
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(99, 99, 99, 0.2);
+    color: rgb(66, 66, 66);
+
 }
 
 #prev {
-    /* left: 10px; */
+    left: 40px;
 }
 
 #next {
-    right: 0px;
+    right: 40px;
 }
 
 .dots{
@@ -84,17 +89,22 @@ hr{
 }
 
 #dot1, #dot2, #dot3{
+    margin: 0px 2px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     cursor: pointer;
 }
 
 #dot1:hover, #dot2:hover, #dot3:hover{
     background-color: white;
+    opacity: 80%;
+    transition: ease-in-out 0.8s;
+    width: 18px;
+    height: 18px;
 }
 
 /* .text-on-img{
