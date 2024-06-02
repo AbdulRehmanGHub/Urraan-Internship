@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  background-color: #2596be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: pink;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s;
+}
+
+.hovered {
+  background: red;
+  animation-play-state: paused;
+}
