@@ -1,0 +1,50 @@
+/*
+#067583  container color
+#ffc2c5  circle color
+#ff1e61  hovered color
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    background-color: #067682;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 194, 197, 0.7);
+    height: 80px;
+    width: 80px;
+    /* transition: background 0.3s; */
+}
+
+.circle2{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 194, 197, 0.7);
+    height: 50px;
+    width: 50px;
+    /* transition: background 0.3s; */
+}
+
+.circle3{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 194, 197, 0.7);
+    height: 20px;
+    width: 20px;
+    /* transition: background 0.3s; */
+}
+
+.hovered{
+    background-color: #ff1e61;
+}
