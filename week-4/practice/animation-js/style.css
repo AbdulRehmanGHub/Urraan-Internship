@@ -1,3 +1,9 @@
+/*
+#067583  container color
+#ffc2c5  circle color
+#ff1e61  hovered color
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -5,24 +11,22 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 500px;
-  background-color: #2596be;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    background: #067583;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: pink;
+  background: #ffc2c5;
   width: 40px;
   height: 40px;
   transition: background 0.3s;
 }
 
 .hovered {
-  background: red;
+  background: #ff1e61;
   animation-play-state: paused;
 }

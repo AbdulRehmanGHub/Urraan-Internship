@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
-const numCircles = 50;
+const numCircles = 10;
 
-function random(min, max) {
+function random(max, min) {
     return Math.random() * (max - min) + min;
 }
 
@@ -24,24 +24,24 @@ function createCircle() {
 }
 
 function animateCircle(circle) {
-    const duration = random(5, 10);
     const startPosition = container.clientHeight;
+    const duration = random(5, 10);
     const endPosition = -40;
 
     circle.style.top = `${startPosition}px`;
     circle.style.transition = `top ${duration}s linear`;
     setTimeout(() => {
         circle.style.top = `${endPosition}px`;
-    }, 100);
+    }, 10);
 
     circle.addEventListener('transitionend', function () {
         if (!circle.classList.contains('hovered')) {
-            circle.style.transition = 'none';
             circle.style.top = `${startPosition}px`;
+            circle.style.transition = 'none';
             setTimeout(() => {
                 circle.style.transition = `top ${duration}s linear`;
                 circle.style.top = `${endPosition}px`;
-            }, 100);
+            }, 10);
         }
     });
 }
