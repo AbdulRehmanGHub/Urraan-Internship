@@ -1,0 +1,1 @@
+Hi everyone, I'm learning AJAX in JavaScript;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch in JS</title>
+  </head>
+  <body>
+    <h1>Fetch in JS</h1>
+    <div id="res"></div>
+
+    <script>
+      fetch("message.txt")
+        .then(function (response) {
+          // check in console if it's working or not      -- // console.log(response);
+          // check the data in a file / url               -- // console.log(response.text());
+
+          return response.text();
+        })
+        // we can also take the function in arrow, like this. / also can make it in one line if code is short..
+        .then((data) => {
+          //   document.getElementById("res").innerHTML = data;
+        });
+
+      // data from url
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((data1) => {
+          console.log(data1);
+          // document.getElementById('res').innerHTML = data1;
+
+          /* just used for example
+                    let names = '';
+                    let emails = '';
+                    let info = '';
+                */
+
+          for (var x in data1) {
+            // alert(`${data1[x].name}`)
+            // document.write(`${data1[x].name} <br>`);
+            // document.querySelector('div').innerHTML = `${data1[x].name}`;
+
+            console.log(`${data1[x].name}`);
+
+            /* just used for example
+                        names += `${data1[x].name}`;
+                        emails += `${data1[x].email}`;
+                        info = `${data1[x].name} + ${data1[x].email}`;
+                    */
+            
+            var a = `${data1[x].name} --------- ${data1[x].email} <br>`;
+
+            document.write(a);
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AJAX</title>
+  </head>
+  <body>
+    <h1>AJAX in JS</h1>
+    <button onclick="loadData()">Click</button>
+
+    <br />
+    <div id="result"></div>
+
+    <script>
+      function loadData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            // console.log(this.responseText);
+            document.querySelector("div").innerHTML = this.responseText;
+          } else if (this.readyState == 4 && this.status == 404) {
+            document.querySelector("div").innerHTML = "File not Found";
+          }
+          // we can add more conditions for different scenarios and errors etc.
+        };
+
+        xhttp.open("GET", "content/content.html", true);
+
+        // real work of AJAX to bring data from APIs / view in console for better understanding.
+        // xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+        // xhttp.open('GET',"https://jsonplaceholder.typicode.com/photos", true);
+
+        // or we can get data from these file as well.
+
+        // xhttp.open("GET", "content/readme.txt", true);
+        // xhttp.open('GET',"message.txt",true);
+
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
