@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .result {
+        background-color: green;
+
+    }
+</style>
+
+<body>
+
+<main>
+    <h1>JavaScript Arrays</h1>
+
+    <!-- for each method -->
+    <h2>The forEach() Method</h2>
+    <p>Call a function once for each array element:</p>
+    <h1 class="result" id="res"></h1>
+
+    <hr>
+
+    <!-- map method -->
+    <h2>The map() Method</h2>
+    <p>Call a function once for each array element:</p>
+    <h1 class="result" id="res1"></h1>
+
+    <hr>
+
+    <!-- flatmap method -->
+    <h2>flatMap() Method</h2>
+    <h1 class="result" id="res2"></h1>
+
+    <hr>
+
+    <!-- flatmap method -->
+    <h2>Filter</h2>
+    <h1 class="result" id="res3"></h1>
+    <h1 class="result" id="res4"></h1>
+
+
+    <hr>
+
+    <!-- reduce method -->
+    <h2>Reduce method</h2>
+    <h1 class="result" id="res5"></h1>
+    <h1 class="result" id="res6"></h1>
+
+
+
+    <hr>
+
+    <!-- Array key -->
+    <h2> Key Method </h2>
+    <h1 class="result" id="res7"></h1>
+
+
+
+
+    <hr>
+
+    <!-- Array entries() method -->
+    <h2> Entries Method </h2>
+    <h1 class="result" id="res8"></h1>
+
+
+
+    
+
+
+    <hr>
+
+    <!-- Array with() method -->
+    <h2> With Method </h2>
+    <h1 class="result" id="res9"></h1>
+
+
+
+    <hr>
+
+    <!-- Spread method -->
+    <h2> Spread Method </h2>
+    <h1 class="result" id="res10"></h1>
+
+
+
+    
+</main>
+
+
+    <!-- JS Part -->
+
+    <script>
+        // for each method
+        // not necessary to take this in function -- i have taken this for readability.
+        function forEachFunc() {
+            const list = [45, 4, 9, 16, 25, 10, 20, 30, 40];
+            let txt = "";
+            list.forEach(myFunction);
+            document.getElementById("res").innerHTML = txt;
+
+            function myFunction(value, index, array) {
+                txt += value + " , ";
+                // txt += value + "<br>";
+                //   txt += index + "<br>"; 
+            }
+        }
+        forEachFunc();
+
+
+        // map method
+        const nums1 = [1, 2, 3, 4, 5, 10, 20, 30, 40, 50];
+        const nums2 = nums1.map(myFunction);
+
+        document.getElementById('res1').innerHTML = nums2;
+
+        function myFunction(value, index, array) {
+            return value * 2;
+        }
+
+
+        // flat map method
+        // no need to create function for this -- I have created for my readability
+        function flatMapFunc() {
+            const myArray = [5, 10, 15, 20, 25, 100, 200, 300, 500];
+            const newArray = myArray.flatMap((x) => x);
+
+            document.getElementById('res2').innerHTML = newArray;
+        }
+        flatMapFunc();
+
+
+        // filter method
+        function filterFunc() {
+            const nums = [12, 4, 16, 38, 10, 15, 11, 34, 66, 18, 20];
+            const kids = nums.filter(kidsFunction);
+            const aged = nums.filter(agedFunction);
+
+            document.getElementById('res3').innerHTML = kids;
+            document.getElementById('res4').innerHTML = aged;
+
+            function kidsFunction(value, index, array) {
+                return value < 15;
+            }
+
+            function agedFunction(value, index, array) {
+                return value >= 15;
+            }
+        }
+        filterFunc();
+
+
+        // reduce method
+        function reduceFunc() {
+            const num_list = [10, 20, 200, 40, 50, 100, 2, 1, 9];
+            const sumNum = num_list.reduce(sumFunc);
+
+            document.getElementById('res5').innerHTML = `The sum of these numbers is ${sumNum}`;
+
+            function sumFunc(total, value, index, array) {
+                return total + value;
+            }
+        }
+        reduceFunc();
+
+        // Array keys()
+
+        function arrayKeyFunc() {
+            const names = ["Ali", "Abdul", "Khan", "Pakistan", "name5", "name6", "name7", "name8"];
+            const key1 = names.keys();
+
+            let text = "";
+            for (let x of key1) {
+                text += x + "  ";
+            }
+
+            document.getElementById('res7').innerHTML = text;
+
+        }
+        arrayKeyFunc();
+
+        //  entries() method
+
+        function entriesFunc() {
+            const names = ["Ali", "Abdul", "Khan", "Pakistan", "name5", "name6", "name7", "name8"];
+            const key1 = names.entries();
+
+            let text = "";
+            for (let x of key1) {
+                text += x + " <br> ";
+            }
+
+            document.getElementById('res8').innerHTML = text;
+
+        }
+        entriesFunc();
+
+        // with method
+        const monthNames = ["jan", "feb", "march", "april", "may", "june", "july"];
+        const myMonth = monthNames.with(1, "february");
+
+        document.getElementById('res9').innerHTML = myMonth;
+
+
+        // spread
+        const workDays = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+        const holidays = ["Sat", "Sun"];
+        const weekDays = [...workDays, ...holidays];
+
+        document.getElementById('res10').innerHTML = weekDays;
+        console.log(weekDays);
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
