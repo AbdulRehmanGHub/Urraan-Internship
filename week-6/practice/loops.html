@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+            text-align: center;
+        }
+
+        .result{
+            color: yellow;
+        }
+    </style>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The forEach() Method</h2>
+
+<p>Call a function once for each array element:</p>
+
+<p class="result" id="res1"></p>
+<p class="result" id="res2"></p>
+
+
+<hr><br>
+<!-- for in -->
+<h2>For In Loops</h2>
+<p>The for in statement can loops over array values:</p>
+
+<p class="result" id="res3"></p>
+
+<hr><br>
+<!-- for of -->
+<h2>JavaScript For of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
+
+<p class="result" id="res4"></p>
+
+
+
+<script>
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("res1").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+
+
+const strs = ["abc", "sfdlkj", "xyz"];
+let res = "";
+strs.forEach(myFunc);;
+document.getElementById('res2').innerHTML = res;
+
+function myFunc(value, index, array){
+	res += value + "<br>";
+}
+
+
+// for in
+const nums = [2, 3, 44];
+let ress = "";
+for (let x in nums) {
+  ress += nums[x] + "<br>";
+}
+
+document.getElementById("res3").innerHTML = ress;
+
+
+// for of
+const cars = ["BMW", "Volvo", "Mini"];
+let text = "";
+for (let x of cars) {
+  text += x + "<br>";
+}
+
+document.getElementById("res4").innerHTML = text;
+
+</script>
+
+</body>
+</html>
