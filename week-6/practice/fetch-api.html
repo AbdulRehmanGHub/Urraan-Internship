@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch in JS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #3d3d3d;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: #27ae60;
+            width: 420px;
+            height: 380px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        #res {
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fetch in JS</h1>
+        <hr><br><br>
+        <div id="res"></div>
+    </div>
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then((response) => response.json())
+            .then((data1) => {
+                console.log(data1);
+
+                let resultHtml = '';
+                for (let x in data1) {
+                    // console.log(`${data1[x].name}`);
+                    resultHtml += `${data1[x].name} ____ ${data1[x].email} <br><br>`;
+                }
+                document.getElementById('res').innerHTML = resultHtml;
+            });
+    </script>
+</body>
+
+</html>
