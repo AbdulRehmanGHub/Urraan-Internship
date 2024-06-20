@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS - Learning</title>
+
+    <style>
+        #new {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div>
+            <h1>VUE JS - Directives</h1>
+            <h2>v-bind Example</h2>
+        </div>
+
+        <div id="new">
+            <img v-bind:src="url"></img>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
