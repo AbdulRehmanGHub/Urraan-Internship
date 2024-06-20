@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS - Learning</title>
+
+    <style>
+        #container {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .myClass {
+            background-color:greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div>
+            <h1>VUE JS - Directives</h1>
+            <h2>v-bind Example</h2>
+        </div>
+
+        <div id="container">
+            <!-- <h1 v-bind:style="{fontSize: size}">Hello in the VUE JS World!</h1> -->
+            <h1 v-bind:style="{fontSize: size + 'px'}">Hello in the VUE JS World!</h1>
+            <!-- <h1 v-bind:style="{ 'font-size': size + 'px' }">Hi everyone</h1> -->
+            <!-- <h1 v-bind:style="{backgroundColor: color}">Hello in the VUE JS World!</h1> -->
+
+
+            <!-- <div v-bind:class="{ myClass: false }"> -->
+            <div v-bind:class="{ myClass: true }">
+                <p>Importance visualized by background color</p>
+            </div>
+
+            <!-- shortcut for v-bind is simply ":" a semicolon / No need to write v-bind now -->
+            <h1 :style="{backgroundColor: color}">Hello in the VUE JS World!</h1>
+
+            
+
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
