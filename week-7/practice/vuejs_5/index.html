@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS Learning</title>
+
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 400px;
+            min-height: 600px;
+            border: 1px solid #fff;
+            color: yellow;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <h1>V-Show in VUE JS...</h1>
+
+        <div id="container">
+            <div v-show="myDiv" id="toChange">
+                <h1>Headings Section</h1>
+                <h1>I'm learning VUE JS.</h1>
+                <h2>I'm learning VUE JS.</h2>
+                <h3>I'm learning VUE JS.</h3>
+                <h4>I'm learning VUE JS.</h4>
+                <h5>I'm learning VUE JS.</h5>
+                <h6>I'm learning VUE JS.</h6>
+
+                <hr>
+                <h1>Image Section</h1>
+                <img src="vuejs.png" height="120px" width="200px">
+
+                <hr>
+
+                <h1>Para Section</h1>
+                <p>Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user
+                    interfaces and single-page applications. It was created by Evan You and is maintained by him and the
+                    rest of the active core team members</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

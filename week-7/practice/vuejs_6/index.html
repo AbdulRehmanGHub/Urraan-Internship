@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <div id="top-text">
+            <h1>{{toptext}}</h1>
+        </div>
+
+        <h1>V-For in VUE JS...</h1>
+
+        <div id="container">
+            <ul>
+                <li v-for="x in mySkills">{{x}}</li>
+            </ul>
+        </div>
+
+        <h1>Technologies</h1>
+
+        <div id="img-container">
+            <img v-for="x in learningLang" v-bind:src="x"></img>
+        </div>
+
+        <h1>My Projects</h1>
+
+        <div id="img-with-text">
+            <figure v-for="x in myProjects">
+                <img v-bind:src="x.url">
+                <figcaption>{{x.name}}</figcaption>
+            </figure>
+        </div>
+
+        <h1>About Me</h1>
+
+        <div id="aboutMe">
+            <p v-for="(x, index) in paras">{{index}} {{x}} <br> </p>
+        </div>
+
+    </main>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

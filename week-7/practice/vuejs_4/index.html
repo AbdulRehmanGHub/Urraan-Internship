@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VU JS Learning</title>
 
     <style>
-        body{
+        body {
             font-family: sans-serif;
             text-align: center;
             color: white;
             background-color: #212121;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
+
+        #app,
+        #checkItem,
+        #checkText {
+            font-weight: bold;
+            background-color: rgb(35, 0, 163);
+            min-height: 100px;
+        }
+
+        #checkText img{
+            height: 140px;
+            width: 200px;
+        }
+
     </style>
 
 </head>
+
 <body>
     <main>
 
         <h1>IF ELSE in VUE JS...</h1>
+        <br>
 
         <div id="app">
-            <h1 v-if="myName">Abdul Rehman.</h1>
-            <h1 v-else>Not Found.</h1>
+            <h3 v-if="myName">Abdul Rehman.</h3>
+            <h3 v-else>Not Found.</h3>
 
-            <h1 v-if="role">Developer.</h1>
-            <h1 v-else>Something else.</h1>
+            <h3 v-if="role">Developer.</h3>
+            <h3 v-else>Student.</h3>
         </div>
 
-        <div>
-            <h1 v-if="myName=='new'">Abdul Rehman.</h1>
-            <h1 v-else-if=>Correct</h1>
-            <h1 v-else>Not Found.</h1>
+        <hr>
 
+        <h1>IF, ELSE-IF and ELSE in VUE JS...</h1>
+        <br>
+
+        <div id="checkItem">
+            <h3 v-if="items>=10">Items Available</h3>
+            <h3 v-else-if="items>=1">Limited Items Available</h3>
+            <h3 v-if="items==0">Not Available / Sold</h3>
+        </div>
+
+        <h1>IF ELSE in VUE JS - Checking Text...</h1>
+        <br>
+
+        <div id="checkText">
+            <h3 v-if="text.includes('Pakistan')">The selected word <span style="color: aqua;"> "{{message}}" is Found </span> in the sentence... 
+            <br>
+                <img src="pk.jpg">
+            </h3>
+
+            <h3 v-else-if="text.includes('India')">The selected word <span style="color: aqua;"> "{{message}}" is Found </span> in the sentence... 
+                <br>
+                    <img src="ind.png">
+                </h3>
             
+            <h3 v-else>The selected word <span style="color: aqua;"> "{{message}}" is NOT found </span> in the sentence...</h3>
         </div>
+
 
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
