@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+#app {
+  text-align: center;
+}
+
+.hero-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 360px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-item:last-child {
+  border-bottom: none;
+}
+
+.remove-button {
+  cursor: pointer;
+}
+
+.remove-button:hover {
+    color: red;
+  }
+
+.add-hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-hero-container input {
+  padding: 10px 36px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 10px;
+}
+
+
+.add-hero-container button {
+  padding: 6px 18px;
+  font-size: 14px;
+  border: none;
+  background-image: radial-gradient( circle 916px at 8.2% 2.5%,  rgb(223, 41, 80)0%, rgb(255, 128, 204) 17%, rgba(255, 119, 183, 0.86) 47.2%, rgba(247,246,246,1) 100.2%, rgba(247,246,246,1) 100.2% );
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d81b60;
+}

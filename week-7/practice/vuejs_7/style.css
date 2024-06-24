@@ -1,0 +1,21 @@
+.changeBG {
+  background-color: blue;
+  color: white;
+}
+
+.lightBG {
+    transition: ease-in 0.4s;
+    background-color: white;
+    color: black;
+}
+
+.darkBG {
+    transition: ease-in 0.4s;
+    background-color: black;
+    color: white;
+}
+
+button {
+    margin: 5px;
+}
+

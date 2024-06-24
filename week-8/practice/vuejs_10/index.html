@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>SHOW IMAGE WITH TEXT</h1>
+    <div id="changingImg">
+        
+        <img v-bind:src="imgURL">
+
+        <ol>
+            <li v-for="language in webDev" v-on:click="imgURL = language.url">
+                {{language.name}}
+            </li>
+        </ol>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

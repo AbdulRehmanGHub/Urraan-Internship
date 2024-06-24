@@ -44,8 +44,36 @@
             <p v-for="(x, index) in paras">{{index}} {{x}} <br> </p>
         </div>
 
-    </main>
+        <div id="vue-events">
+            <div>
+                <h1>Count Total Typed Keys</h1>
+                <div id="countData">
+                    <input type="text" v-on:input="inpCount++" placeholder="Press keys to count...">
+                    <p>{{'Total Typed Keys are: ' + inpCount}}</p>
+                </div>
+            </div>
 
+            <div>
+                <h1>Hover BG Change</h1>
+                <div id="container-2" v-on:mousemove="changeColor" v-bind:style="{ backgroundColor: backgroundColor }">
+                </div>
+            </div>
+
+        </div>
+
+        <h1>SHOW IMAGE WITH TEXT</h1>
+        <div id="changingImg">
+
+            <img v-bind:src="imgURL">
+
+            <ol>
+                <li v-for="language in webDev" v-on:click="imgURL = language.url">
+                    {{language.name}}
+                </li>
+            </ol>
+        </div>
+
+    </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>

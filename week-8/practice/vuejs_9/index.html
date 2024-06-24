@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>BG Color Change VUE</h1>
+    <div id="container">
+        <div v-on:mousemove="bgChange = Math.floor(Math.random()*360)"
+            v-bind:style="{backgroundColor:'hsl('+bgChange+',60%,60%)'}">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

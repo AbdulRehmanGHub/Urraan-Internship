@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE JS Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{"Mouse Count: "+ count}}</h1>
+        <button v-on:click="count++" v-bind:class="vueClass">Mouse Count</button>
+
+        <button v-on:click="toggleBackgroundColor">Toggle Background Color</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

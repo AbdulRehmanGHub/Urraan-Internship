@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue Hero List</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div id="app">
+        <hero-list></hero-list>
+    </div>
+
+    <script>
+        Vue.component('hero-list', {
+            template: `
+                <div>
+
+                    <ul class="hero-list">
+                        <li v-for="(hero, index) in heroes" :key="index" class="hero-item">
+                            {{ hero }}
+                            <span class="remove-button" @click="removeHero(index)">x</span>
+                        </li>
+                    </ul>
+
+                    <div class="add-hero-container">
+                        <input v-model="newHero" placeholder="Type Hero Name Here" />
+                        <button @click="addHero">Add Hero</button>
+                    </div>
+
+                </div>
+            `,
+            data() {
+                return {
+                    heroes: [],
+                    newHero: ''
+                };
+            },
+            methods: {
+                addHero() {
+                    if (this.newHero.trim() !== '') {
+                        this.heroes.push(this.newHero.trim());
+                        this.newHero = '';
+                    }
+                },
+                removeHero(index) {
+                    this.heroes.splice(index, 1);
+                }
+            }
+        });
+
+        new Vue({
+            el: '#app'
+        });
+    </script>
+
+</body>
+
+</html>

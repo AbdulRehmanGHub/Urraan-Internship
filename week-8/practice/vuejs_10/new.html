@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Food Image</title>
+ 
+</head>
+<body>
+
+<div id="app">
+  <img v-bind:src="imgUrl">
+  <ol>
+    <li v-for="food in manyFoods" v-on:click="imgUrl = food.url">
+      {{ food.name }}
+    </li>
+  </ol>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        imgUrl: 'img_pizza.svg',
+        manyFoods: [
+        {name: 'HTML', url:'../img/html.png'},
+                {name: 'CSS', url:'../img/css.png'},
+                {name: 'JAVASCRIPT', url:'../img/js.png'},
+                {name: 'TAILWIND', url:'../img/tailwind.png'},
+                {name: 'BOOTSTRAP', url:'../img/bootstrap.png'},
+                {name: 'VUE JS', url:'../img/vuejs.png'},
+                {name: 'REACT', url:'../img/react.png'},
+                {name: 'GIT', url:'../img/git.png'},
+                {name: 'GITHUB', url:'../img/github.png'}
+      ]
+      }
+    }
+  })
+ app.mount('#app')
+</script>
+
+</body>
+</html>

@@ -82,3 +82,67 @@ body {
 #aboutMe p{
   text-align: justify;
 }
+
+
+#countData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#countData input{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#countData p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+#vue-events{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#container-2{
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#changingImg{
+  background-color:rgb(113, 52, 163);
+  display: flex;
+  max-width: 400px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+#changingImg img{
+  background-color: honeydew;
+  border-radius: 20%;
+  border: 1px solid black;
+  width: 180px;
+  height: 180px;
+}
+
+#changingImg ol{
+  margin: 10px;
+  font-weight: bold;
+}
+
+#changingImg li{
+  list-style-type: none;
+}
+
+#changingImg li:hover{
+  cursor: pointer;
+  background-color: rgb(255, 123, 34);
+}

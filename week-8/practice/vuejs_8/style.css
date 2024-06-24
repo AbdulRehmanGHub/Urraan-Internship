@@ -1,0 +1,19 @@
+#countData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#countData input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#countData p{
+    font-size: 20px;
+    font-weight: bold;
+    color: chartreuse;
+}
