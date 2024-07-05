@@ -1,4 +1,4 @@
-const API_KEY = '959a9902993eb220015aac3783daeed8';
+const API_KEY = 'xx';
 
 const form = document.querySelector('form');
 const search = document.querySelector('#search');
