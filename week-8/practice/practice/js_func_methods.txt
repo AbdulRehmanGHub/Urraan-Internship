@@ -1,0 +1,6 @@
+forEach  --  Array ko asal mein change kardeta hai.
+map      --  Array ki copy bana ker usmein changing ki jaati hai, asal array same rehta hai.
+filter   --  Array se koi specific value delete karne keliye use hota hai kisi condition ki base per.
+reduce   --  pichli value ko store karta hai, jese 1st val and 2nd val. tu 2nd wali val first se add hokar 3rd val degi and so on.
+some     --  Condition ko check krke true ya false mein value dega jese true and false.
+find     --  Condition ko check krke asal value dega jese 1,2,5 etc.
