@@ -1,0 +1,24 @@
+@font-face {
+    font-family: myFont;
+    src: url(Manche_font.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* need to make it responsive */
+
+
+
+
+
+
