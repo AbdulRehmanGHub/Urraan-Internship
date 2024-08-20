@@ -92,6 +92,7 @@ body {
     padding: .7rem;
     background-color: transparent;
     border: 2px solid #fff;
+    color: #fff;
 }
 
 input::placeholder {
